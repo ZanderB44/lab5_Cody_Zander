@@ -52,7 +52,7 @@ void message_handler(k_msgq_t *messages)
         k_msgq_get(messages, i, K_FOREVER);
 
         //delay
-        while(x < 1000){i++}
+        k_sleep(K_MSEC(100));
 
         //toggle GPIO
         gpio_pin_toggle(dev_out, PIN_OUT);
