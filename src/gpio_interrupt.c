@@ -51,6 +51,9 @@ void message_handler(k_msgq_t *messages)
         //recieve message from queue, assign loop number to data 
         k_msgq_get(messages, i, K_FOREVER);
 
+        //delay
+        while(x < 1000){i++}
+
         //toggle GPIO
         gpio_pin_toggle(dev_out, PIN_OUT);
     }
