@@ -1,5 +1,5 @@
 ## Lab 5 - Zander and Cody
-# Current Version has message queue implemented, jitter and drift were measured using a copy of the supplied reference with modifications described in the activities. 
+
 
 
 Jitter/Drift: 
